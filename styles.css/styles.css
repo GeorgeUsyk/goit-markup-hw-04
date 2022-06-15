@@ -20,6 +20,7 @@ h3,
 h4,
 a,
 ul,
+p,
 li {
     margin: 0%;
 }
@@ -254,10 +255,12 @@ color: var(--button-hover-color);
     flex-basis: calc((100% - 90px)/4);
 }
 .icon {
+    flex-basis: calc((100% - 90px)/4);
     display: block;
     justify-self: center;
     align-items: center;
     padding: 25px 100px;
+    background-color: #F5F4FA;
     margin: 0 auto;
     border: 0;
     margin-bottom: 30px;
@@ -392,26 +395,33 @@ color: var(--button-hover-color);
 }
 
 /* ЛОГО-НАШИ КЛИЕНТЫ*/
+.container > .our-clients {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .client-logos {
     display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
+    padding: 0;
     flex-wrap: wrap;
     gap: 30px;
-
+   
 }
 .content-logo {
-    border: none;
-    padding: 0%;
+    display: block;
+    flex-basis: calc((100% - 150px)/6);
+    
 }
 
 .logo-link-client {
-    display: flex;
-    padding: 16px 32px;
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 31px;
     color: #AFB1B8;
     cursor: pointer;
-    padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
@@ -606,8 +616,10 @@ color: var(--button-hover-color);
 }
 }
 .project-type {
-    display: block;
-    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
     line-height: 1.88;
     color: var(--main-text-color);
 }
@@ -615,8 +627,13 @@ color: var(--button-hover-color);
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
-
+}
+.portfolio-item {
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px solid #EEEEEE;
+    flex-basis: calc((100% - 60px)/3);
+    border: 0;
 }
 .portfolio-block {
     display: block;
@@ -626,12 +643,6 @@ color: var(--button-hover-color);
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
     0px 4px 4px 0 rgba(0, 0, 0, 0.06);
 }
-.portfolio-item {
-    display: block;
-    cursor: pointer;
-    border-bottom: 1px solid #EEEEEE;
-    flex-basis: calc((100% - 60px)/3);
-    border: 0;
-}
+
 
 
