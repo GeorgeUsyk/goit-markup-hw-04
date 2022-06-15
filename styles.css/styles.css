@@ -413,6 +413,7 @@ color: var(--button-hover-color);
 .content-logo {
     display: block;
     flex-basis: calc((100% - 150px)/6);
+    border: none;
     
 }
 
